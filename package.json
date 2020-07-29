@@ -1,0 +1,18 @@
+{
+  "name": "DAY_8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "caporal": "^1.4.0",
+    "mysql2": "^2.1.0",
+    "prompt-confirm": "^2.0.4",
+    "sequelize": "^6.3.3"
+  }
+}
