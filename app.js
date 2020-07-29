@@ -80,9 +80,16 @@ prog.version('1.0.0')
                 deleteRow();
             }
           });
-        
     })
-
-
+    .command('todo done', 'Set a todo item to completed')
+    .argument('<id>', 'Parameter ID')
+    .action((args, option, logger) => {
+        List.findOne(
+            { 
+              where: {id : args.id}
+          }).then(function (record) {
+            return record.update({Name: `${record.Name}` + "(Done)"});
+          })
+    })
 
 prog.parse(process.argv);
